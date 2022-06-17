@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Duolingo_1.BatDauPage"
+              NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Padding="20,40,20,20">
+            <Image x:Name="img" HeightRequest="150" WidthRequest="150" Source="owl_1.png" Margin="0,20,0,0"/>
+            <Label x:Name="txtbh" Style="{StaticResource title}"/>
+            <Label Text="Cùng kiểm tra trình độ nhé!" VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 20, 0,0" FontSize="20"/>
+            <Label Text="Bạn đã sẵn sàng làm bài?" HorizontalOptions="Center" Margin="0, 10, 0,0" FontSize="20"/>
+            <Button x:Name="gotoTest" VerticalOptions="EndAndExpand" Clicked="gotoTest_Clicked"
+                Style="{StaticResource btnnext}"
+                Text="Bắt đầu làm bài" />
+            <Button x:Name="cancel" VerticalOptions="End" Clicked="cancel_Clicked" Style="{StaticResource btnpre}" Text="Bỏ qua"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
